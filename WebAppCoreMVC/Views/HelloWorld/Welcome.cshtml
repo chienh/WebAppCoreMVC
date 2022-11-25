@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["title"] = "Bem-vindo";
+}
+<h2>Bem-vindo!</h2>
+
+<ul>
+    @for (int i = 1; i <= int.Parse(ViewData["numTimes"].ToString()); i++)
+    {
+        <li>@ViewData["msg"] - repetição número @i</li>
+    }
+    
+</ul>
+
